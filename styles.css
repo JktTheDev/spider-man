@@ -222,4 +222,21 @@ h1, h2 {
     section {
         padding: 60px 5%;
     }
+
+}
+/* =============================
+   Form Validation Messages
+============================= */
+
+.error {
+    color: #ff4c4c;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.success {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    font-weight: 600;
 }
