@@ -85,21 +85,27 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section alt-section">
-        <h2>Contact Spider-Man</h2>
-        <p>Need help? Just look up — he might already be there.</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <form class="contact-form" id="contactForm" novalidate>
+    <input type="text" id="name" placeholder="Your Name" />
+    <small class="error" id="nameError"></small>
+
+    <input type="email" id="email" placeholder="Your Email" />
+    <small class="error" id="emailError"></small>
+
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <small class="error" id="messageError"></small>
+
+    <button type="submit">Send Message</button>
+    <p class="success" id="successMsg"></p>
+</form>
+
 
     <!-- Footer -->
     <footer class="footer">
         <p>© 2025 Spider-Man Fan Website | Not an official Marvel site</p>
     </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
+
