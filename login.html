@@ -113,10 +113,18 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
     // If everything is valid
     if (isValid) {
-        successMsg.textContent = "Login Successful!";
+        successMsg.textContent = "Login Successful! Redirecting...";
+
+        // Redirect after 1.5 seconds
+        setTimeout(function() {
+            window.location.href = "index.html"; 
+            // 🔴 Change this if your original file name is different
+        }, 1500);
     }
 });
 </script>
 
+
 </body>
 </html>
+
